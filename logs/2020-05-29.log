@@ -1,0 +1,9 @@
+2020-05-29 10:43:40,718 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-29 10:43:40,732 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-29 10:43:48,502 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [29/May/2020 10:43:48] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-29 10:51:44,949 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-29 10:51:44,963 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-29 10:51:51,075 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [29/May/2020 10:51:51] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-29 10:52:22,454 - route.py - GetStudentInfo - 30 - INFO - Get openid : 666
+2020-05-29 10:52:22,558 - route.py - GetStudentInfo - 36 - INFO - Return : {'status': 0, 'stu_info': {'stu_id': '161830315', 'name': 'ljf', 'class': '1618303'}}
+2020-05-29 10:52:22,559 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [29/May/2020 10:52:22] "[37mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 200 -

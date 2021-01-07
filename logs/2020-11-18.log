@@ -1,0 +1,2 @@
+2020-11-18 20:27:03,903 - app.py - <module> - 11 - INFO - Now Starting!
+2020-11-18 20:27:03,919 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

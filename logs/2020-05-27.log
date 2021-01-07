@@ -1,0 +1,400 @@
+2020-05-27 09:18:40,727 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 09:18:40,744 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 09:20:12,986 - app.py - log_exception - 1891 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/xjhznb/PycharmProjects/untitled1/app.py", line 17, in index
+    return render_template('index.html')
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\loaders.py", line 117, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2020-05-27 09:20:12,989 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:20:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2020-05-27 09:20:13,068 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:20:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-05-27 09:20:15,946 - app.py - log_exception - 1891 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/xjhznb/PycharmProjects/untitled1/app.py", line 17, in index
+    return render_template('index.html')
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\loaders.py", line 117, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2020-05-27 09:20:15,947 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:20:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2020-05-27 09:20:15,993 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:20:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-05-27 09:20:17,028 - app.py - log_exception - 1891 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/xjhznb/PycharmProjects/untitled1/app.py", line 17, in index
+    return render_template('index.html')
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\loaders.py", line 117, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2020-05-27 09:20:17,029 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:20:17] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2020-05-27 09:22:05,640 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 09:22:05,657 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 09:22:10,528 - app.py - log_exception - 1891 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:/Users/xjhznb/PycharmProjects/untitled1/app.py", line 17, in index
+    return render_template('index.html')
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\jinja2\loaders.py", line 117, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2020-05-27 09:22:10,531 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:22:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2020-05-27 09:22:19,478 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:22:19] "[37mGET /log HTTP/1.1[0m" 200 -
+2020-05-27 09:24:01,509 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 09:24:01,526 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 09:24:07,307 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:24:07] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 09:27:05,986 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 09:27:06,004 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 09:27:10,801 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:27:10] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 09:27:13,352 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:27:13] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 09:27:15,236 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:27:15] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 09:27:17,030 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:27:17] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 09:28:41,913 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:28:41] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 09:29:35,204 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:29:35] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 09:29:40,397 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:29:40] "[37mGET /log HTTP/1.1[0m" 200 -
+2020-05-27 09:44:03,667 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 09:44:03,682 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 09:44:09,432 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:44:09] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 09:44:13,236 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 09:44:13] "[37mGET /log HTTP/1.1[0m" 200 -
+2020-05-27 10:02:30,495 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 10:02:30,510 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 10:02:38,160 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 10:02:38] "[37mGET /log HTTP/1.1[0m" 200 -
+2020-05-27 10:02:40,514 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 10:02:40] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 10:20:36,480 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 10:20:36,495 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 10:20:41,981 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 10:20:41] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 10:20:46,145 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 10:20:46] "[37mGET /log HTTP/1.1[0m" 200 -
+2020-05-27 16:20:16,700 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 16:20:16,717 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 17:01:21,555 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 17:01:21,572 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 17:10:42,621 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 17:10:42,640 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 17:10:55,752 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 17:10:55] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 17:11:01,991 - app.py - log_exception - 1891 - ERROR - Exception on /classpoint/getuserinfo/stu [GET]
+Traceback (most recent call last):
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\api_1_0_0\route.py", line 30, in GetStudentInfo
+    data = json.loads(request.get_data())
+  File "D:\python\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\python\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\python\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2020-05-27 17:11:02,067 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 17:11:02] "[35m[1mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 500 -
+2020-05-27 17:11:14,789 - route.py - GetOpenId - 14 - INFO - Get appid : None
+2020-05-27 17:11:14,790 - route.py - GetOpenId - 15 - INFO - Get secret : None
+2020-05-27 17:11:14,790 - route.py - GetOpenId - 16 - INFO - Get js_code : None
+2020-05-27 17:11:14,790 - route.py - GetOpenId - 24 - INFO - Return : {'status': 2, 'openid': None, 'bind_status': None, 'user_info': {'id': None, 'name': None, 'class': None}}
+2020-05-27 17:11:14,790 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 17:11:14] "[37mGET /classpoint/getopenid HTTP/1.1[0m" 200 -
+2020-05-27 17:12:29,683 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 17:12:29,703 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 17:12:35,071 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 17:12:35] "[31m[1mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 405 -
+2020-05-27 17:16:26,391 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 17:16:26,408 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 17:16:32,498 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 17:16:32] "[31m[1mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 400 -
+2020-05-27 17:16:33,676 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 17:16:33] "[31m[1mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 400 -
+2020-05-27 17:16:46,679 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 17:16:46] "[31m[1mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 400 -
+2020-05-27 17:59:48,804 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 17:59:48,819 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 18:00:07,116 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 18:00:07] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-27 18:03:47,060 - route.py - GetStudentInfo - 31 - INFO - Get openid : None
+2020-05-27 18:03:47,060 - route.py - GetStudentInfo - 37 - INFO - Return : {'status': 2, 'stu_info': {'stu_id': None, 'name': None, 'class': None}}
+2020-05-27 18:03:47,061 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 18:03:47] "[37mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 200 -
+2020-05-27 18:04:05,360 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 18:04:05,374 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 18:04:07,265 - route.py - GetStudentInfo - 31 - INFO - Get openid : None
+2020-05-27 18:04:07,265 - route.py - GetStudentInfo - 37 - INFO - Return : {'status': 2, 'stu_info': {'stu_id': None, 'name': None, 'class': None}}
+2020-05-27 18:04:07,265 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 18:04:07] "[37mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 200 -
+2020-05-27 18:04:41,733 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 18:04:41,748 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 18:04:49,905 - app.py - log_exception - 1891 - ERROR - Exception on /classpoint/getuserinfo/stu [GET]
+Traceback (most recent call last):
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\api_1_0_0\route.py", line 30, in GetStudentInfo
+    openid = request.json.get('openid')
+AttributeError: 'NoneType' object has no attribute 'get'
+2020-05-27 18:04:49,908 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 18:04:49] "[35m[1mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 500 -
+2020-05-27 18:04:51,950 - app.py - log_exception - 1891 - ERROR - Exception on /classpoint/getuserinfo/stu [GET]
+Traceback (most recent call last):
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\api_1_0_0\route.py", line 30, in GetStudentInfo
+    openid = request.json.get('openid')
+AttributeError: 'NoneType' object has no attribute 'get'
+2020-05-27 18:04:51,950 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 18:04:51] "[35m[1mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 500 -
+2020-05-27 18:07:30,597 - app.py - log_exception - 1891 - ERROR - Exception on /classpoint/getuserinfo/stu [GET]
+Traceback (most recent call last):
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\api_1_0_0\route.py", line 30, in GetStudentInfo
+    openid = request.json.get('openid')
+AttributeError: 'NoneType' object has no attribute 'get'
+2020-05-27 18:07:30,598 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 18:07:30] "[35m[1mGET /classpoint/getuserinfo/stu?_openid=666 HTTP/1.1[0m" 500 -
+2020-05-27 18:07:45,465 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 18:07:45] "[31m[1mPOST /classpoint/getuserinfo/stu?_openid=666 HTTP/1.1[0m" 405 -
+2020-05-27 18:07:53,497 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 18:07:53,514 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 18:07:55,989 - app.py - log_exception - 1891 - ERROR - Exception on /classpoint/getuserinfo/stu [POST]
+Traceback (most recent call last):
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\api_1_0_0\route.py", line 30, in GetStudentInfo
+    openid = request.json.get('openid')
+AttributeError: 'NoneType' object has no attribute 'get'
+2020-05-27 18:07:55,991 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 18:07:55] "[35m[1mPOST /classpoint/getuserinfo/stu?_openid=666 HTTP/1.1[0m" 500 -
+2020-05-27 18:07:58,245 - app.py - log_exception - 1891 - ERROR - Exception on /classpoint/getuserinfo/stu [POST]
+Traceback (most recent call last):
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\api_1_0_0\route.py", line 30, in GetStudentInfo
+    openid = request.json.get('openid')
+AttributeError: 'NoneType' object has no attribute 'get'
+2020-05-27 18:07:58,246 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 18:07:58] "[35m[1mPOST /classpoint/getuserinfo/stu?_openid=666 HTTP/1.1[0m" 500 -
+2020-05-27 18:10:33,522 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 18:10:33,537 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 18:10:44,177 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 18:10:44] "[31m[1mGET /classpoint/getuserinfo/stu?_openid=666 HTTP/1.1[0m" 400 -
+2020-05-27 19:32:57,007 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 19:32:57,022 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 19:32:59,658 - route.py - GetStudentInfo - 31 - INFO - Get openid : {'openid': 666}
+2020-05-27 19:32:59,702 - route.py - GetStudentInfo - 37 - INFO - Return : {'status': 1, 'stu_info': {'stu_id': None, 'name': None, 'class': None}}
+2020-05-27 19:32:59,702 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 19:32:59] "[37mPOST /classpoint/getuserinfo/stu?_openid=666 HTTP/1.1[0m" 200 -
+2020-05-27 19:33:35,438 - route.py - GetStudentInfo - 31 - INFO - Get openid : {'openid': 666}
+2020-05-27 19:33:35,461 - route.py - GetStudentInfo - 37 - INFO - Return : {'status': 1, 'stu_info': {'stu_id': None, 'name': None, 'class': None}}
+2020-05-27 19:33:35,462 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 19:33:35] "[37mPOST /classpoint/getuserinfo/stu?openid=666 HTTP/1.1[0m" 200 -
+2020-05-27 19:33:49,570 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 19:33:49,588 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 19:33:58,840 - route.py - GetStudentInfo - 31 - INFO - Get openid : {'openid': 666}
+2020-05-27 19:33:58,882 - route.py - GetStudentInfo - 37 - INFO - Return : {'status': 1, 'stu_info': {'stu_id': None, 'name': None, 'class': None}}
+2020-05-27 19:33:58,882 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 19:33:58] "[37mGET /classpoint/getuserinfo/stu?openid=666 HTTP/1.1[0m" 200 -
+2020-05-27 19:34:04,199 - route.py - GetStudentInfo - 31 - INFO - Get openid : {}
+2020-05-27 19:34:04,212 - route.py - GetStudentInfo - 37 - INFO - Return : {'status': 1, 'stu_info': {'stu_id': None, 'name': None, 'class': None}}
+2020-05-27 19:34:04,212 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 19:34:04] "[37mGET /classpoint/getuserinfo/stu?openid=666 HTTP/1.1[0m" 200 -
+2020-05-27 19:34:26,988 - route.py - GetStudentInfo - 31 - INFO - Get openid : {}
+2020-05-27 19:34:27,000 - route.py - GetStudentInfo - 37 - INFO - Return : {'status': 1, 'stu_info': {'stu_id': None, 'name': None, 'class': None}}
+2020-05-27 19:34:27,000 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 19:34:27] "[37mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 200 -
+2020-05-27 19:56:47,792 - route.py - GetStudentInfo - 31 - INFO - Get openid : {}
+2020-05-27 19:57:41,076 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 19:57:41,090 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 19:58:24,965 - route.py - GetStudentInfo - 31 - INFO - Get openid : {'openid': '666'}
+2020-05-27 19:58:25,031 - route.py - GetStudentInfo - 37 - INFO - Return : {'status': 1, 'stu_info': {'stu_id': None, 'name': None, 'class': None}}
+2020-05-27 19:58:25,032 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 19:58:25] "[37mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 200 -
+2020-05-27 20:45:47,233 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 20:45:47,252 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 20:45:50,159 - route.py - GetStudentInfo - 31 - INFO - Get openid : 666
+2020-05-27 20:45:50,253 - route.py - GetStudentInfo - 37 - INFO - Return : {'status': 0, 'stu_info': {'stu_id': '161830315', 'name': '123456', 'class': '1618303'}}
+2020-05-27 20:45:50,254 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:45:50] "[37mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 200 -
+2020-05-27 20:47:32,068 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 20:47:32,092 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 20:47:36,219 - route.py - GetStudentInfo - 30 - INFO - Get openid : 666
+2020-05-27 20:47:36,264 - route.py - GetStudentInfo - 36 - INFO - Return : {'status': 0, 'stu_info': {'stu_id': '161830315', 'name': '123456', 'class': '1618303'}}
+2020-05-27 20:47:36,264 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:47:36] "[37mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 200 -
+2020-05-27 20:50:01,765 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 20:50:01,783 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 20:50:05,135 - route.py - GetStudentInfo - 32 - INFO - Get openid : 666
+2020-05-27 20:50:05,177 - route.py - GetStudentInfo - 38 - INFO - Return : {'status': 0, 'stu_info': {'stu_id': '161830315', 'name': '123456', 'class': '1618303'}}
+2020-05-27 20:50:05,177 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:50:05] "[37mGET /classpoint/getuserinfo/stu HTTP/1.1[0m" 200 -
+2020-05-27 20:52:29,028 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 20:52:29,045 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 20:53:36,383 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:53:36] "[31m[1mPOST /classpoint/verify/stu HTTP/1.1[0m" 400 -
+2020-05-27 20:54:33,628 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 20:54:33,646 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 20:54:39,168 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 20:54:39,185 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 20:54:46,460 - app.py - log_exception - 1891 - ERROR - Exception on /classpoint/verify/stu [POST]
+Traceback (most recent call last):
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\xjhznb\PycharmProjects\untitled1\api_1_0_0\route.py", line 56, in VerifyStu
+    openid = data['openid']
+KeyError: 'openid'
+2020-05-27 20:54:46,462 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:54:46] "[35m[1mPOST /classpoint/verify/stu HTTP/1.1[0m" 500 -
+2020-05-27 20:55:25,028 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:55:25] "[31m[1mPOST /classpoint/verify/stu HTTP/1.1[0m" 400 -
+2020-05-27 20:55:49,179 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 20:55:49,196 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 20:56:29,349 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:56:29] "[31m[1mGET /classpoint/getopenid HTTP/1.1[0m" 400 -
+2020-05-27 20:56:39,025 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:56:39] "[31m[1mGET /classpoint/getopenid HTTP/1.1[0m" 400 -
+2020-05-27 20:57:23,929 - app.py - <module> - 11 - INFO - Now Starting!
+2020-05-27 20:57:23,946 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-05-27 20:57:28,925 - route.py - GetOpenId - 14 - INFO - Get appid : 666
+2020-05-27 20:57:28,925 - route.py - GetOpenId - 15 - INFO - Get secret : 161830315
+2020-05-27 20:57:28,925 - route.py - GetOpenId - 16 - INFO - Get js_code : 123456
+2020-05-27 20:57:30,325 - route.py - GetOpenId - 24 - INFO - Return : {'status': 5, 'openid': None, 'bind_status': None, 'user_info': {'id': None, 'name': None, 'class': None}}
+2020-05-27 20:57:30,326 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:57:30] "[37mGET /classpoint/getopenid HTTP/1.1[0m" 200 -
+2020-05-27 20:58:04,315 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:58:04] "[31m[1mGET /classpoint/verify/stu HTTP/1.1[0m" 405 -
+2020-05-27 20:58:07,927 - route.py - VerifyStu - 59 - INFO - Get openid : 666
+2020-05-27 20:58:07,927 - route.py - VerifyStu - 60 - INFO - Get stu_id : 161830315
+2020-05-27 20:58:07,927 - route.py - VerifyStu - 61 - INFO - Get name : 123456
+2020-05-27 20:58:07,991 - route.py - VerifyStu - 71 - INFO - Return : {'status': 0, 'bind_status': True, 'stu_info': {'stu_id': '161830315', 'name': '123456', 'class': '1618303'}}
+2020-05-27 20:58:07,991 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:58:07] "[37mPOST /classpoint/verify/stu HTTP/1.1[0m" 200 -
+2020-05-27 20:58:40,943 - route.py - GetOpenId - 14 - INFO - Get appid : 666
+2020-05-27 20:58:40,943 - route.py - GetOpenId - 15 - INFO - Get secret : 161830315
+2020-05-27 20:58:40,943 - route.py - GetOpenId - 16 - INFO - Get js_code : 123456
+2020-05-27 20:58:41,026 - route.py - GetOpenId - 24 - INFO - Return : {'status': 5, 'openid': None, 'bind_status': None, 'user_info': {'id': None, 'name': None, 'class': None}}
+2020-05-27 20:58:41,026 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [27/May/2020 20:58:41] "[37mGET /classpoint/getopenid HTTP/1.1[0m" 200 -

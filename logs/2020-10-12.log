@@ -1,0 +1,7 @@
+2020-10-12 16:13:30,245 - app.py - <module> - 11 - INFO - Now Starting!
+2020-10-12 16:13:30,260 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-10-12 16:14:39,082 - app.py - <module> - 11 - INFO - Now Starting!
+2020-10-12 16:14:39,096 - _internal.py - _log - 113 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-10-12 16:14:42,860 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [12/Oct/2020 16:14:42] "[37mGET / HTTP/1.1[0m" 200 -
+2020-10-12 16:14:42,948 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [12/Oct/2020 16:14:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-10-12 16:14:53,557 - _internal.py - _log - 113 - INFO - 127.0.0.1 - - [12/Oct/2020 16:14:53] "[37mGET /log HTTP/1.1[0m" 200 -
