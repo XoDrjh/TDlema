@@ -2,7 +2,7 @@ import pymongo
 
 class DataBase:
     def __init__(self, db_name):
-        self.db = pymongo.MongoClient(host='172.81.227.183', port=27017)[db_name]
+        self.db = pymongo.MongoClient(host='xxx.xx.xxx.xxx', port=27017)[db_name]
 
     def GetUser(self, openid, id):
         mycol = self.db['User']
